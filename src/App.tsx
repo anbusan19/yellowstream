@@ -1,12 +1,12 @@
 import { useState } from 'react';
+import ChatSidebar from './components/ChatSidebar';
+import GiftAnimations from './components/GiftAnimations';
+import GiftStore from './components/GiftStore';
 import Header from './components/Header';
 import LandingPage from './components/LandingPage';
+import { NitrolitePortal } from './components/NitrolitePortal';
 import StreamPlayer from './components/StreamPlayer';
-import ChatSidebar from './components/ChatSidebar';
-import GiftStore from './components/GiftStore';
-import CreatorDashboard from './components/CreatorDashboard';
 import WalletOverlay from './components/WalletOverlay';
-import GiftAnimations from './components/GiftAnimations';
 
 type View = 'home' | 'stream' | 'dashboard';
 
@@ -63,7 +63,7 @@ function App() {
             balance={balance} 
           />
         </div>
-        <CreatorDashboard />
+        <NitrolitePortal />
       </div>
     );
   }

@@ -23,9 +23,8 @@ const WalletOverlay: React.FC<WalletOverlayProps> = ({ balance, onTopUp }) => {
       <div className="fixed top-4 right-4 z-40">
         <div className="bg-black/90 backdrop-blur-sm border border-yellow-600/50 rounded-xl p-3 min-w-32">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center">
               <Wallet className="w-4 h-4 text-yellow-400" />
-              <span className="text-yellow-400 font-semibold">${balance.toFixed(2)}</span>
             </div>
             <button
               onClick={() => setShowTopUp(true)}
